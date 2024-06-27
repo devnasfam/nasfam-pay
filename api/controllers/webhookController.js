@@ -5,7 +5,7 @@ export const handlePaymentNotification = async (req, res, next) => {
     try {
         const payload = req.body;
         const payvesselSignature = req.headers['HTTP_PAYVESSEL_HTTP_SIGNATURE'];
-        const secret = process.env.API_SECRET;
+        const secret = 'PVSECRET-BE0WQ36L5D4B79G0IMSKCLGHX704PTI9F3C5FBH2PBIXENA3TNC7USWSW0WICNLK';
 
         const hash = crypto.createHmac('sha512', secret)
             .update(JSON.stringify(payload))
