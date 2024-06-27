@@ -3,8 +3,8 @@ import dotenv from 'dotenv'
 
 dotenv.config();
 
-const apiKey = process.env.API_KEY;
-const apiSecret = process.env.API_SECRET;
+const apiKey = 'PVKEY-Z2PVCUAP8SI5HVDBO6QB96NAG7LJR56X';
+const apiSecret = 'PVSECRET-BE0WQ36L5D4B79G0IMSKCLGHX704PTI9F3C5FBH2PBIXENA3TNC7USWSW0WICNLK';
 
 export const createVirtualAccount = async (req, res, next) => {
     try {
